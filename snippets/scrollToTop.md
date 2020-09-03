@@ -10,11 +10,12 @@ Scroll by a fraction of the distance from the top. Use `window.requestAnimationF
 
 ```js
 const scrollToTop = () => {
-  const c = document.documentElement.scrollTop || document.body.scrollTop;
-  if (c > 0) {
-    window.requestAnimationFrame(scrollToTop);
-    window.scrollTo(0, c - c / 8);
-  }
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) 
+    {
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, c - c / 8);
+    }
 };
 ```
 
